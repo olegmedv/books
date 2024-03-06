@@ -1,0 +1,13 @@
+.book-list {
+  margin-top: 20px;
+}
+.book-list .row {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+.book-list .header {
+  font-weight: bold;
+  text-decoration: underline;
+}

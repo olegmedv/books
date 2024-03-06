@@ -15,7 +15,7 @@ async function getBooks() {
     const response = await axios.get('https://webhook.nodul.ru/766/dev/33e6096a-3648-457f-af7f-aa93a4321b71');
     // Начинаем формировать HTML-код для списка книг
     let output = `
-      <div class="row header">
+      <div class="row font-weight-bold text-decoration-underline mb-3">
         <div class="col-sm">
           Название
         </div>
@@ -31,8 +31,9 @@ async function getBooks() {
       // Создаем новый объект Book
       let book = new Book(item.name, item.author, item.title);
       // Добавляем информацию о книге в HTML-код
+	  //класс bg-light делает фон светлым, mb-2 - добавляет отступ снизу, класс p-2 добавляет внутренний отступ, а класс rounded скругляет углы
       output += `
-        <div class="row">
+        <div class="row bg-light mb-2 p-2 rounded">
           <div class="col-sm">
             ${book.name}
           </div>

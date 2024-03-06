@@ -3,17 +3,15 @@
 <head>
   <!-- Подключаем Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <!-- Подключаем наш собственный CSS файл -->
-  <link rel="stylesheet" href="styles.css">
   <!-- Подключаем библиотеку axios -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
 
-<!-- Контейнер для нашего списка книг -->
+<!-- Контейнер для нашего списка книг с отступом сверху mt-5 -->
 <div class="container mt-5">
-  <!-- Заголовок страницы -->
-  <h2 class="text-center">Список книг</h2>
+  <!-- Заголовок страницы с отступом снизу mb-4-->
+  <h2 class="text-center mb-4">Список книг</h2>
   <!-- Индикатор загрузки, который отображается, пока данные загружаются -->
   <div id="loading" class="text-center">
     <div class="spinner-border" role="status">
@@ -21,7 +19,7 @@
     </div>
   </div>
   <!-- Место для отображения списка книг -->
-  <div id="books" class="book-list d-none"></div>
+  <div id="books" class="d-none"></div>
 </div>
 
 <!-- Подключаем наш собственный JavaScript файл -->
